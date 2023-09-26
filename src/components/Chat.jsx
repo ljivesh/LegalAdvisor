@@ -44,7 +44,7 @@ formData.append('query', query);
         {chatHistory.map((message, index) => (
           <div key={index} className={`message ${message.user ? 'user-chat' : 'ai-chat'}`}>
             <div className="user-message"><span className='user'>User:</span> {message.user}</div>
-            <div className="ai-message"><span className='user'>AI:</span> dofvmm{message.ai}</div>
+            <div className="ai-message"><span className='user'>AI:</span> {message.ai}</div>
           </div>
         ))}
       </div> 
@@ -55,11 +55,12 @@ formData.append('query', query);
           value={query}
           onChange={(e) => setQuery(e.target.value)}
         />
-        {loading && <p>Getting response from model please</p>}
-        <button onClick={handleQuerySubmit} disabled={loading}>
+        <button className='send-button' onClick={handleQuerySubmit} disabled={loading}>
           Send
         </button>
       </div>
+        {loading && <p>Getting response from model please wait....</p>}
+        
     </div>
   );
 }

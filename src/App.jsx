@@ -11,7 +11,7 @@ function App() {
       <h1 className="app-title">Legal Advisor AI Chat App</h1>
       <FileUpload />
       <Chat />
-      <ResetButton />
+      <ResetButton /> 
     </div>
   );
 }

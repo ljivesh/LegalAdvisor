@@ -45,17 +45,41 @@ input[type="text"] {
 }
 
 /* Send Button Styling */
-button {
+.send-button {
   padding: 8px 16px;
   background-color: #ffc107; /* Gold button background */
   color: #000; /* Black text */
   border: none;
   cursor: pointer;
   border-radius: 5px;
+  margin-left: 10px;
+}
+.upload-button {
+  padding: 8px 16px;
+  background-color: #ffc107; /* Gold button background */
+  color: #000; /* Black text */
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+.upload-button:hover {
+  background-color: #ffca28; /* Brighter gold on hover */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Shadow effect on hover */
+}
+.reset button {
+  padding: 8px 16px;
+  background-color: #ffc107; /* Gold button background */
+  color: #000; /* Black text */
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-top: 10px;
 }
 
 /* Button Hover Effect */
-button:hover {
+.send-button:hover {
   background-color: #ffca28; /* Brighter gold on hover */
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Shadow effect on hover */
 }
