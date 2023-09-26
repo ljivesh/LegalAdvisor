@@ -1,0 +1,98 @@
+/* Main App Container */
+.app-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* App Title */
+.app-title {
+  text-align: center;
+  color: #1a237e; /* Deep blue title color */
+}
+
+/* File Upload Container */
+.file-upload-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Chat Container */
+.chat-container {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #fff;
+  margin-top: 20px;
+  max-height: 400px; /* Limit chat height with scrollbar */
+  overflow-y: auto; /* Enable vertical scrollbar when needed */
+}
+
+/* Input Area Styling */
+.input-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* Input Box Styling */
+input[type="text"] {
+  flex-grow: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Send Button Styling */
+button {
+  padding: 8px 16px;
+  background-color: #ffc107; /* Gold button background */
+  color: #000; /* Black text */
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Button Hover Effect */
+button:hover {
+  background-color: #ffca28; /* Brighter gold on hover */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Shadow effect on hover */
+}
+
+/* Chat Message Styling */
+.message {
+  padding: 8px;
+  margin: 8px;
+  border-radius: 5px;
+}
+
+/* User's Chat Message */
+.user{
+  font-weight:bold ;
+}
+.user-message {
+  background-color: #e2bd4f; /* Gold chat bubble for the user */
+  color: #000;
+  text-align: right;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* AI's Chat Message */
+.ai-message {
+  background-color: #4a55bb; /* Deep blue chat bubble for AI */
+  color: #fff;
+  text-align: left;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+} 
+
+/* Loading Text Styling */
+.loading-text {
+  text-align: center;
+  margin-top: 10px;
+  color: #767ed7; /* Deep blue loading text color */
+}
