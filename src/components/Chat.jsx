@@ -44,7 +44,7 @@ formData.append('query', query);
         {chatHistory.map((message, index) => (
           <div key={index} className={`message ${message.user ? 'user-chat' : 'ai-chat'}`}>
             <div className="user-message"><span className='user'>User:</span> {message.user}</div>
-            <div className="ai-message"><span className='user'>AI:</span> {message.ai}</div>
+            <div className="ai-message"><span className='user'>AtorLee:</span> {message.ai}</div>
           </div>
         ))}
       </div> 
